@@ -19,5 +19,13 @@
         "php": ">=8.0",
         "guzzlehttp/guzzle": "^7.7",
         "illuminate/support": "^10.15"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.9"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }
