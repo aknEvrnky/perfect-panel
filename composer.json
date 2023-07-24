@@ -1,0 +1,18 @@
+{
+    "name": "aknevrnky/perfect-panel",
+    "description": "Perfect panel API SDK",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AknEvrnky\\PerfectPanel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aknEvrnky"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
