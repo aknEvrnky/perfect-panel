@@ -1,5 +1,6 @@
 {
     "name": "aknevrnky/perfect-panel",
+    "version": "0.1.0",
     "description": "Perfect panel API SDK",
     "type": "library",
     "license": "MIT",
