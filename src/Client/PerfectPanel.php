@@ -27,6 +27,10 @@ class PerfectPanel
 
     }
 
+    public function setClient(Client $client): void
+    {
+        $this->client = $client;
+    }
 
     /**
      * Returns a collection of available services
@@ -77,7 +81,7 @@ class PerfectPanel
 
         static::validateResponseBody($body);
 
-        return (int) $body->order;
+        return (int) $body['order'];
     }
 
 

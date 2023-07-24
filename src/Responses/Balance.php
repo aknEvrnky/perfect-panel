@@ -4,7 +4,6 @@ namespace AknEvrnky\PerfectPanel\Responses;
 
 class Balance
 {
-
     public function __construct(private float $balance, private string $currency)
     {
     }
@@ -25,6 +24,4 @@ class Balance
     {
         return $this->currency;
     }
-
-
 }

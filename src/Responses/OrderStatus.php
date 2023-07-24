@@ -86,5 +86,4 @@ class OrderStatus
     {
         return $this->currency;
     }
-
 }

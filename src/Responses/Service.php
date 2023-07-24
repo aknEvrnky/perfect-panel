@@ -15,13 +15,6 @@ class Service
     private bool $refill;
     private bool $cancel;
 
-
-    public function __construct()
-    {
-
-    }
-
-
     public static function fromArray(array $data): Service
     {
         $service = new Service();
@@ -218,6 +211,4 @@ class Service
     {
         $this->cancel = $cancel;
     }
-
-
 }
