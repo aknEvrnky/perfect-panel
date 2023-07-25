@@ -24,6 +24,7 @@
 |
 */
 
+/** @var \Pest\Expectation $this */
 expect()->extend('toBeOne', function () {
     return $this->toBe(1);
 });

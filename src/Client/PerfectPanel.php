@@ -49,7 +49,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
 
         return (new Collection($body))->mapWithKeys(fn($service) => [(int) $service['service'] => Service::fromArray($service)]);
     }
@@ -79,7 +79,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
 
         return (int) $body['order'];
     }
@@ -105,7 +105,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
         $body['id'] = $orderID;
 
         return OrderStatus::fromArray($body);
@@ -135,7 +135,7 @@ class PerfectPanel
         $body = json_decode($response->getBody()->getContents(), true);
         if ($body !== null) {
             foreach ($body as $item) {
-                static::validateResponseBody($item);
+                PerfectPanel::validateResponseBody($item);
             }
         }
 
@@ -172,7 +172,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
 
         return new Balance($body['balance'], $body['currency']);
     }
@@ -197,7 +197,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
 
         return $body['refill'];
     }
@@ -222,7 +222,7 @@ class PerfectPanel
 
         $body = json_decode($response->getBody()->getContents(), true);
 
-        static::validateResponseBody($body);
+        PerfectPanel::validateResponseBody($body);
 
         return $body['status'];
     }
