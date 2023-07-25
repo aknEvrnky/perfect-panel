@@ -8,7 +8,7 @@ on:
 jobs:
   tagging:
     runs-on: ubuntu-latest
-
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
