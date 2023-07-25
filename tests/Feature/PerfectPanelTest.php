@@ -6,6 +6,8 @@ use AknEvrnky\PerfectPanel\Responses\OrderStatus;
 use AknEvrnky\PerfectPanel\Responses\Service;
 use Illuminate\Support\Collection;
 
+/** @var Tests\TestCase $this */
+
 it('fetches services', function () {
     $this->mockGuzzleWithData([
         [
