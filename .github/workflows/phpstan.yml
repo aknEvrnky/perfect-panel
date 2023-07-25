@@ -16,7 +16,7 @@ jobs:
           extensions: mbstring, dom, curl, libxml
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction
+        run: composer install --prefer-dist --no-interaction --ignore-platform-reqs
 
       - name: Run PHPStan
         run: vendor/bin/phpstan analyse
