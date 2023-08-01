@@ -67,5 +67,11 @@ You should use try-catch blocks to handle these exceptions.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Tests
+To run tests:
+```bash
+composer test
+```
+
 ## License
 AknEvrnky\PerfectPanel\Client is open-sourced software licensed under the MIT license.
